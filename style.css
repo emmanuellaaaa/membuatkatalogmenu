@@ -271,14 +271,14 @@ a.reservasi:hover {
 .book-a-table {
     padding: 60px 10%;
     background-color: #fff;
+    text-align: center;
 }
 
 .book-a-table .section-title {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
-    text-align: center;
+    color: #d4956a;
     margin-bottom: 40px;
-    color: #333;
 }
 
 .book-container {
@@ -286,11 +286,15 @@ a.reservasi:hover {
     gap: 30px;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .book-form {
     flex: 1;
     min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .book-form input,
@@ -305,6 +309,7 @@ a.reservasi:hover {
     color: #555;
     outline: none;
     transition: border-color 0.3s;
+    display: block;
 }
 
 .book-form input:focus,
@@ -331,6 +336,7 @@ a.reservasi:hover {
     letter-spacing: 1px;
     transition: background-color 0.3s;
     margin-top: 10px;
+    align-self: flex-start;
 }
 
 .btn-book:hover {
@@ -340,11 +346,12 @@ a.reservasi:hover {
 .book-map {
     flex: 1;
     min-width: 300px;
+    max-width: 500px;
 }
 
 .book-map iframe {
     width: 100%;
-    height: 320px;
+    height: 350px;
     border: none;
     border-radius: 8px;
 }
@@ -353,14 +360,14 @@ a.reservasi:hover {
 .komentar-rekanan {
     padding: 60px 10%;
     background-color: #fff;
+    text-align: center;
 }
 
 .komentar-rekanan .section-title {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
-    text-align: center;
+    color: #d4956a;
     margin-bottom: 40px;
-    color: #333;
 }
 
 .komentar-cards {
@@ -378,6 +385,7 @@ a.reservasi:hover {
     color: #fff;
     padding: 30px;
     border-radius: 8px;
+    text-align: left;
 }
 
 .komentar-card p {
@@ -399,18 +407,18 @@ a.reservasi:hover {
     color: #999;
 }
 
-/* ===== RESPONSIVE BOOK & KOMENTAR ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .book-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .komentar-cards {
         flex-direction: column;
         align-items: center;
     }
-   }
-
+}
 /* =========================
    5. FOOTER
 ========================= */
